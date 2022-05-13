@@ -174,14 +174,26 @@ const thebe_selector_output = ".output, .cell_output"
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install-requirements">
-   Install requirements
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Getting started with Jupyter Books
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#install-requirements">
+     Install requirements
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-overview">
+     Method overview
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#method-overview">
-   Method overview
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#build-book">
+   Build book
   </a>
  </li>
 </ul>
@@ -204,14 +216,26 @@ const thebe_selector_output = ".output, .cell_output"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install-requirements">
-   Install requirements
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Getting started with Jupyter Books
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#install-requirements">
+     Install requirements
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-overview">
+     Method overview
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#method-overview">
-   Method overview
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#build-book">
+   Build book
   </a>
  </li>
 </ul>
@@ -227,7 +251,8 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Getting started with Jupyter Books<a class="headerlink" href="#getting-started-with-jupyter-books" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="install-requirements">
 <h2>Install requirements<a class="headerlink" href="#install-requirements" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyter-book</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyter-book</span></code>
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ghp-import</span></code></p>
 </div>
 <div class="section" id="method-overview">
 <h2>Method overview<a class="headerlink" href="#method-overview" title="Permalink to this headline">¶</a></h2>
@@ -237,8 +262,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>Add some content</p></li>
 <li><p>Write <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> table of contents</p></li>
 </ol>
-<p><code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">./</span></code></p>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="build-book">
+<h1>Build book<a class="headerlink" href="#build-book" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">./</span></code>
+<code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">_build/html</span></code></p>
+<p>Add line to .bashrc
+alias book=”jupyter-book build ./ &amp;&amp; ghp-import -n -p -f _build/html”</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
