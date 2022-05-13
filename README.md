@@ -1,2 +1,3 @@
 # temp_jupyter_book
-Temp 
+
+For book see: https://michaelallen1966.github.io/temp_jupyter_book/
